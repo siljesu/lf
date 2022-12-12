@@ -1,0 +1,9 @@
+[submodule "nxp-support"]
+	path = nxp-support
+	url = git@github.com:siljesu/nxp-support.git
+[submodule "freertos-support"]
+	path = freertos-support
+	url = git@github.com:siljesu/freertos-support.git
+[submodule "lingua-franca"]
+	path = lingua-franca
+	url = git@github.com:siljesu/lingua-franca.git
