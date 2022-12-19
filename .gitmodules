@@ -1,4 +1,4 @@
-[submodule "nxp-support"]
+[submodule "k22f-support"]
 	path = k22f-support
 	url = git@github.com:siljesu/k22f-support.git
 	branch = main
