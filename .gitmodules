@@ -1,6 +1,6 @@
 [submodule "nxp-support"]
-	path = nxp-support
-	url = git@github.com:siljesu/nxp-support.git
+	path = k22f-support
+	url = git@github.com:siljesu/k22f-support.git
 	branch = main
 [submodule "freertos-support"]
 	path = freertos-support
