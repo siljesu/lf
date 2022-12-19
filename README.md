@@ -13,13 +13,13 @@ This is necessary since the source of the compiler has been changed to allow Fre
 
 Build Docker image using the command
 ```sh
-    $ docker build -t lf-nxp -f Dockerfile.nxp .
+    $ docker build -t lf-k22f -f Dockerfile.k22f .
 ```
 Run a container which builds the lf file given as input, by using
 ```sh
-    $ docker run -v <YOUR PATH>/lf/nxp-support:/lf/nxp-support lf-nxp:latest /lf/nxp-support/src/<APPLICATION NAME>/<APPLICATION NAME>.lf
+    $ docker run -v <YOUR PATH>/lf/k22f-support:/lf/k22f-support lf-k22f:latest /lf/k22f-support/src/<APPLICATION NAME>/<APPLICATION NAME>.lf
 ```
-Note: "-v </your/path>/lf/nxp-support:/lf/freertos-support" is used to share the nxp-support folder with the container. This means that, during development on your host, a new container can be run to build your changes.
+Note: "-v </your/path>/lf/k22f-support:/lf/k22f-support" is used to share the k22f-support folder with the container. This means that, during development on your host, a new container can be run to build your changes.
 
 ## FreeRTOS
 
@@ -32,6 +32,9 @@ Run a container which builds the lf file given as input, by using
   $ docker run -v <YOUR PATH>/lf/freertos-support:/lf/freertos-support lf-freertos:latest /lf/freertos-support/src/<APPLICATION NAME>/<APPLICATION NAME>.lf
 ```
 Note: "-v </your/path>/lf/freertos-support:/lf/freertos-support" is used to share the freertos-support folder with the container. This means that, during development on your host, a new container can be run to build your changes.
+
+## Without Docker
+Simply follow the installation process documented in the Dockerfiles manually.
 
 ## Debugging with GDB
 
